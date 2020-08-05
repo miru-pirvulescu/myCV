@@ -1,2 +1,1 @@
-# myCV
-Repo of my CV website
+Miruna's app
