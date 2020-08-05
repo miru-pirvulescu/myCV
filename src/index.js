@@ -15,7 +15,7 @@ const weekList = [{id: 1, category: "Economics", headline: "Bitcoin fluctuation 
 ]
 
 ReactDOM.render(
-  <App weekend={false} endList={endList} weekList={weekList} />, 
+  <App weekend={true} endList={endList} weekList={weekList} />, 
   document.getElementById("root")
 );
 
