@@ -1,28 +1,21 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header/Header';
-
-const News = ({category, headline}) => <p><b>{category}</b>: <i>{headline}</i></p>;
+import Home from './components/home/Home';
 
 
-const App = ({weekend, endList, weekList}) => (
+const weekendList = [{id: 1, category: "Holidays", headline: "Ideal holiday quiz!"},
+                            {id: 2, category: "Travel", headline: "Bali - the cheap hidden gem of the East"},
+                            {id: 3, category: "Hobbies", headline: "10 things to make that are not banana bread"}
+            ]
+
+const weekList = [{id: 1, category: "Economics", headline: "Bitcoin fluctuation like never before!"},
+                  {id: 2, category: "Health", headline: "The effects of eating 5-a-day."},
+                  {id: 3, category: "Transport", headline: "Expect tube closures this week on Circle."}
+]
+
+const App = () => (
   <>
-    <Header theme='light'></Header>
-    <div>
-        {weekend ? 
-            <ul>
-                {endList.map((elem) =>
-                    <li key={elem.id}><News category={elem.category} headline={elem.headline}/></li>
-                )}
-            </ul>
-            :
-            <ul>
-                {weekList.map((elem, i) =>
-                    <li key={elem.id}><News category={elem.category} headline={elem.headline}/></li>
-                )}
-            </ul>                    
-        }
-    </div>
+    <Home />
   </>
 );
 
