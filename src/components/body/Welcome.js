@@ -13,13 +13,13 @@ const welcomeStyle={
 const Welcome = () => {
     return(
         <>
-        <div style={{height: '400px', position: 'relative'}}>
-            <Layout style={{background: 'url(' + welcome + ') center / cover'}}>
-            <Content>
-                <h1 style={welcomeStyle}>Welcome!</h1>
-            </Content>
-            </Layout>
-        </div>
+            <div style={{height: '400px', position: 'relative'}}>
+                <Layout style={{background: 'url(' + welcome + ') center / cover'}}>
+                <Content>
+                    <h1 style={welcomeStyle}>Welcome!</h1>
+                </Content>
+                </Layout>
+            </div>
         </>
     );
 }
