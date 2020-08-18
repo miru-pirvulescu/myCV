@@ -1,13 +1,13 @@
 import React from 'react';
 import Welcome from './Welcome';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import About from './About';
 
 
 const Body = ({weekend, weekendList, weekList}) => {
     return(
         <>
             <Welcome />
+            <About />
         </>
     );
 }

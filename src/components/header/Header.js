@@ -46,7 +46,6 @@ const Header = () => {
                     fontSize: "20px",
                     fontWeight: "bolder",
                     }}>
-                    <Nav.Link href="../home/Home.js" >Home</Nav.Link>
                     <Nav.Link href="/about">About me</Nav.Link>
                     <Nav.Link href="/projects">Projects</Nav.Link>
                     <Nav.Link href="/documents">Documents</Nav.Link>
@@ -54,9 +53,9 @@ const Header = () => {
                 </Nav>
 
                 <Nav className="col-3 justify-content-around">
-                    <Nav.Link href="https://www.linkedin.com/in/miruna-p%C3%AErvulescu-3684bb163/" target="_blank"><i className="fab fa-lg fa-linkedin"></i></Nav.Link>
-                    <Nav.Link href="https://github.com/miru-pirvulescu" target="_blank"><i className="fab fa-lg fa-github-square"></i></Nav.Link>
-                    <Nav.Link href="https://www.hackerrank.com/miru_pirvulescu" target="_blank"><i className="fab fa-lg fa-hackerrank"></i></Nav.Link>
+                    <Nav.Link href="https://www.linkedin.com/in/miruna-p%C3%AErvulescu-3684bb163/" target="_blank"><i className="fab fa-2x fa-linkedin"></i></Nav.Link>
+                    <Nav.Link href="https://github.com/miru-pirvulescu" target="_blank"><i className="fab fa-2x fa-github-square"></i></Nav.Link>
+                    <Nav.Link href="https://www.hackerrank.com/miru_pirvulescu" target="_blank"><i className="fab fa-2x fa-hackerrank"></i></Nav.Link>
                 </Nav> 
             </Navbar.Collapse>
         </Navbar>
