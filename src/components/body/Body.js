@@ -4,14 +4,12 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 
 
-const Home = ({weekend, weekendList, weekList}) => {
+const Body = ({weekend, weekendList, weekList}) => {
     return(
         <>
-            <Header />
-            <Welcome/>
-            <Footer />
+            <Welcome />
         </>
     );
 }
 
-export default Home;
+export default Body;
