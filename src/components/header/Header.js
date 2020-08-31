@@ -1,7 +1,7 @@
 import React from 'react';
 import logodark from '../../assets/img/logo-dark.png';
 
-import {Navbar, Nav, Button, Form, FormControl} from 'react-bootstrap';
+import {Navbar, Nav} from 'react-bootstrap';
 
 const Header = () => {
     return(

@@ -2,7 +2,7 @@ import React from 'react';
 import Intro from './Intro.js';
 import PersonalDetails from './PersonalDetails.js';
 
-import {Grid, Cell} from 'react-mdl';
+import {Grid} from 'react-mdl';
 import Divider from '@material-ui/core/Divider';
 
 const About = () => {
