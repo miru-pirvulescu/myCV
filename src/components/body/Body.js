@@ -2,6 +2,7 @@ import React from 'react';
 import Welcome from './Welcome';
 import About from './About';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 
 const Body = ({weekend, weekendList, weekList}) => {
@@ -10,6 +11,7 @@ const Body = ({weekend, weekendList, weekList}) => {
             <Welcome />
             <About />
             <Portfolio />
+            <Contact />
         </>
     );
 }
