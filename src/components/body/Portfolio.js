@@ -1,14 +1,17 @@
 import React from 'react';
-import {CardDeck} from 'react-bootstrap';
 import Project from "./Project";
 import cat1 from "../../assets/img/cat1.jpg"
+import List from '@material-ui/core/List';
 
 const Portfolio = () => {
     return(
-    <div style={{padding: '20px',
-                 background: 'black'
-    }}>
-        <CardDeck>
+        <List style={{
+            justifyContent: "space-between",
+            display: 'flex',
+            flexDirection: 'row',
+            padding: '20px',
+            background:'black'
+        }} dense>
             <Project 
                 title='Text-based RPG'
                 description="this is a cat"
@@ -44,8 +47,7 @@ const Portfolio = () => {
                 description="this is a cat"
                 thumbnail={cat1}
             />
-        </CardDeck>
-    </div>
+        </List>
     );
 }
 
