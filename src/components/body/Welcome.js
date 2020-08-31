@@ -2,7 +2,6 @@ import React from 'react';
 import {Layout, Content} from 'react-mdl';
 import welcome from '../../assets/img/welcome.jpg';
 
-
 const welcomeStyle={
     color:"black",
     position: "absolute",
@@ -13,8 +12,8 @@ const welcomeStyle={
 const Welcome = () => {
     return(
         <>
-            <div style={{height: '400px', position: 'relative'}}>
-                <Layout style={{background: 'url(' + welcome + ') center / cover'}}>
+            <div style={{height: "400px", position: 'relative'}}>
+                <Layout style={{background: 'url(' + welcome + ') top / cover'}}>
                 <Content>
                     <h1 style={welcomeStyle}>Welcome!</h1>
                 </Content>
