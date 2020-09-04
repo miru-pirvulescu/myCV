@@ -1,18 +1,43 @@
 import React from 'react';
-import {Tab} from 'react-bootstrap';
+import Job from './Job';
 
-const workstyle = {
+const experiencestyle = {
     marginLeft: "40px",
     marginRight: "40px",
     fontFamily: "calibri",
-    fontSize: "25px",
+    fontSize: "20px",
     color: "black"
 }
 
 const WorkExperience = () =>{
 
     return(
-        <Tab.Pane eventKey="first">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</Tab.Pane>
+        <>
+            <Job
+                title="Junior Data Scientist - Industrial Placement"
+                company="Vodafone Group Plc."
+                period="July 2019 - July 2020"
+                description="During my twelve-month industrial placement at Vodafone, I worked in the Big Data & AI department based in London as a junior data scientist. My projects were part of Vodafone’s Data for Social Good programme, where I contributed in tracking the spread of various diseases through the world. The technologies I used include Python (with great focus on Pandas and PySpark) and Jupyter Notebooks for data analysis, as well as React.JS for front-end development."
+            />
+            <Job
+                title="Operations Coordinator - Internship"
+                company="Agility Sciences Ltd."
+                period="September 2018 - December 2018"
+                description="In my time at Agility Sciences, I reliably presented the main company product, ActiveLedger, to potential investors, took charge of communication and relations with other companies, and diligently coordinated various events. The advantages brought to the company consisted in seriousness regarding deadlines, top quality work, and flexibility in tasks."
+            />
+            <Job
+                title="Data operator - Internship"
+                company="Smithfield Prod"
+                period="July 2016 - September 2016"
+                description="My three months at Smithfield facilitated my employer with first class database design in MySQL, including weekly, monthly, and seasonal sales reports on a range of products shipped world-wide by the company. The queries were written using SQL in Microsoft Visual Basic and translated from tables to text using a company-designed language processor."
+            />
+            <Job
+                title="Data operator - Internship"
+                company="Saguaro Technology"
+                period="July 2015 - August 2015"
+                description="Between my second and third year of high school, my contributions were to test a prototype for an online asset tracker, as well as design a simple game using object-oriented programming. The skills I learned from this employment are basic object-oriented design rules and C# syntax. What I brought to the table at such a young age were passion, an untamed thirst for knowledge, and basic procedural programming skills."
+            />
+        </>
     );
 }
 
