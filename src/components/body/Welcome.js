@@ -12,7 +12,7 @@ const welcomeStyle={
 const Welcome = () => {
     return(
         <>
-            <div style={{height: "400px", position: 'relative'}}>
+            <div style={{height: "500px", position: 'relative'}}>
                 <Layout style={{background: 'url(' + welcome + ') top / cover'}}>
                 <Content>
                     <h1 style={welcomeStyle}>Welcome!</h1>

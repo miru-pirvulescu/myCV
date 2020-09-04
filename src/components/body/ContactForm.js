@@ -6,7 +6,7 @@ const ContactForm = () =>{
     return(
         <Cell col={8} tablet={12} phone={12}>
             <Form>
-                <FormLabel>Get in touch!</FormLabel>
+                <h4>Get in touch!</h4>
             <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control required type="email" placeholder="name@example.com" />
@@ -16,9 +16,10 @@ const ContactForm = () =>{
                 <Form.Label>Type of request</Form.Label>
                 <Form.Control required as="select">
                 <option>--Select--</option>
-                <option>Project</option>
                 <option>CV</option>
                 <option>Cover Letter</option>
+                <option>Project details</option>
+                <option>Reference</option>
                 <option>Meeting</option>
                 </Form.Control>
             </Form.Group>
