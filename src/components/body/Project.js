@@ -1,51 +1,53 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {Card, Button, Badge, Modal} from 'react-bootstrap';
 
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+const Project = ({title, description, thumbnail, tags, details}) => {
+    const [show, setShow] = useState(false);
 
-const useStyles = makeStyles({
-    root: {
-      maxWidth: 345,
-    },
-    media: {
-      height: 140,
-      width: 250,
-    },
-  });
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
-const Project = ({title, description, thumbnail}) => {
-    const classes = useStyles();
     return(
         <>
-            <Card>
-                <CardActionArea>
-                    <CardMedia
-                    className={classes.media}
-                    image={thumbnail}
-                    title={title}
-                    />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                {title}
-                            </Typography>
-
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                {description}
-                            </Typography>
-                        </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                    Learn More
-                    </Button>
-                </CardActions>
+            <Card style={{width: '18rem'}}>
+                <Card.Img variant="top" src={thumbnail} />
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>
+                        {description}
+                    </Card.Text>
+                    {tags.map(tag =>(
+                        <>
+                            <Badge variant="primary">{tag}</Badge>{' '}
+                        </>
+                    ))}
+                    <br></br>
+                    <Button
+                        variant="outline-dark" 
+                        onClick={handleShow}
+                        style={{
+                            bottom: "0px"
+                        }}>Learn more</Button>
+                </Card.Body>
             </Card>
+            
+            <Modal
+                show={show}
+                onHide={handleClose}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                >
+                <Modal.Header closeButton>
+                <Modal.Title>{title}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{details}</Modal.Body>
+                <Modal.Footer>
+                <Button variant="primary" onClick={handleClose}>
+                    Close
+                </Button>
+                </Modal.Footer>
+            </Modal>
         </>
     );
 }
