@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import {Card, Button, Badge, Modal} from 'react-bootstrap';
+import ProjectModal from './ProjectModal';
 
 const Project = ({title, description, thumbnail, tags, details}) => {
     const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
 
     return(
         <>
