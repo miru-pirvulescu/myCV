@@ -1,5 +1,5 @@
 import React from 'react';
-import logodark from '../../assets/img/logo-dark.png';
+import logodark from '../../assets/img/Logo/logo-dark.png';
 
 import {Navbar, Nav} from 'react-bootstrap';
 
