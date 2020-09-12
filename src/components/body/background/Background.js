@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Tab, Row, Col, Nav} from 'react-bootstrap';
 import BGEducation from './BGEducation';
 import BGExperience from './BGExperience';
 import BGExtracurriculars from './BGExtracurriculars';
-import "./work.css";
+import "./background.css";
 
 const workstyle = {
     marginLeft: "40px",
@@ -17,7 +17,7 @@ const Background = () =>{
 
     return(
         <>
-            <div style={workstyle} id="work">
+            <div style={workstyle} id="background">
                 <h3>My Background</h3>
                 <Tab.Container defaultActiveKey="first" className="myWorkStyle">
                     <Row>

@@ -1,6 +1,6 @@
 import React from 'react';
 import School from './School';
-import education from '../../data/background/Education.js';
+import education from '../../../data/background/Education.js';
 
 
 const BGEducation = () =>{
