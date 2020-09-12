@@ -20,11 +20,11 @@ const Header = () => {
                     fontSize: "20px",
                     fontWeight: "bolder",
                     }}>
-                    <Nav.Link href="/about">About me</Nav.Link>
-                    <Nav.Link href="/work">My Work</Nav.Link>
-                    <Nav.Link href="/projects">Projects</Nav.Link>
-                    <Nav.Link href="/requests">Requests</Nav.Link>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
+                    <Nav.Link href="#about">About me</Nav.Link>
+                    <Nav.Link href="#work">My Work</Nav.Link>
+                    <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                    <Nav.Link href="#requests">Requests</Nav.Link>
+                    <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
 
                 <Nav className="col-3 justify-content-around">

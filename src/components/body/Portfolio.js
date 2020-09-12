@@ -15,7 +15,7 @@ const portfoliostyle = {
 const Portfolio = () => {
     return (
         <>
-            <div style={portfoliostyle}>
+            <div style={portfoliostyle} id="portfolio">
                 <h3 style={{color: "white"}}>Portfolio</h3>
                 
                 <CardDeck>

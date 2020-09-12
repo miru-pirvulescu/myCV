@@ -7,7 +7,7 @@ import Divider from '@material-ui/core/Divider';
 
 const About = () => {
     return(
-        <Grid className="demo-grid-ruler justify-content-around">
+        <Grid className="demo-grid-ruler justify-content-around" id="about">
             <Intro />
             <Divider orientation="vertical" flexItem={true}/>
             <PersonalDetails />

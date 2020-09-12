@@ -45,14 +45,16 @@ const Project = ({title, description, thumbnail, tags, details, demo}) => {
                 </Modal.Header>
                 <Modal.Body>
                     <Grid>
-                        {demo != "" ?
-                            (<Cell col={6} phone={12}>
+                        {demo ?
+                            <Cell col={6} phone={12}>
                                 <Player
                                     playsInline
                                     poster={thumbnail}
                                     src={demo}
                                     />
-                            </Cell> ) : <></>
+                            </Cell>
+                            :
+                            <></>
                         }
                         <Cell col={!demo ? 12 : 6} phone={12}>
                             {details}

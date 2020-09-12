@@ -4,7 +4,7 @@ import {Cell} from 'react-mdl';
 const ContactDetails = () =>{
     return(
         <>
-            <Cell col={3} tablet={12} phone={12} style={{textAlign: 'center'}}>
+            <Cell col={3} tablet={12} phone={12} style={{textAlign: 'center'}} id="contact">
                     <h4 style={{fontWeight: "bold",fontSize: "30px"}}>
                             Contact
                     </h4>

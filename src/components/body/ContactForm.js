@@ -4,7 +4,7 @@ import {Form, FormLabel, Button} from 'react-bootstrap';
 
 const ContactForm = () =>{
     return(
-        <Cell col={8} tablet={12} phone={12}>
+        <Cell col={8} tablet={12} phone={12} id="requests">
             <Form>
                 <h4>Get in touch!</h4>
             <Form.Group controlId="exampleForm.ControlInput1">
