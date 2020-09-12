@@ -17,7 +17,7 @@ const Work = () =>{
 
     return(
         <>
-            <div style={workstyle}>
+            <div style={workstyle} id="work">
                 <h3>My work</h3>
                 <Tab.Container defaultActiveKey="first" className="myWorkStyle">
                     <Row>

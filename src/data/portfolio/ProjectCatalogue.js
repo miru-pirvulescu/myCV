@@ -15,7 +15,7 @@ const projects = [
         thumbnail: thumb_escape,
         tags: ["UE4", "C++"],
         details: "Escape is currently my most recent Unreal project. The purpose of the game is to find two keys in a mansion in order to escape it. The aim of the project was to learn more about using textures and mateerials in Unreal, as well as linking actions together, adding sounds and listeners to the level, hence why the story itself may seem a little uninteresting compared to the mechanics involved.",
-        // demo: demo_escape
+        //demo: demo_escape
     },
     {
         id: 2,
