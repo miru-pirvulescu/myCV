@@ -21,9 +21,8 @@ const Header = () => {
                     fontWeight: "bolder",
                     }}>
                     <Nav.Link href="#about">About me</Nav.Link>
-                    <Nav.Link href="#work">My Work</Nav.Link>
+                    <Nav.Link href="#background">My Background</Nav.Link>
                     <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-                    <Nav.Link href="#requests">Requests</Nav.Link>
                     <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
 

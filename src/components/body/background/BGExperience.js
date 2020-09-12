@@ -1,6 +1,6 @@
 import React from 'react';
 import Job from './Job';
-import experience from '../../data/background/Experience.js';
+import experience from '../../../data/background/Experience.js';
 
 
 const experiencestyle = {

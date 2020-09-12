@@ -1,6 +1,6 @@
 import React from 'react';
 import Activity from './Activity';
-import extracurriculars from '../../data/background/Extracurriculars.js';
+import extracurriculars from '../../../data/background/Extracurriculars.js';
 
 const BGExtracurriculars = () =>{
 

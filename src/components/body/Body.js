@@ -1,9 +1,9 @@
 import React from 'react';
-import Welcome from './Welcome';
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Background from './Background';
+import Welcome from './welcome/Welcome';
+import About from './about/About';
+import Portfolio from './portfolio/Portfolio';
+import Contact from './contact/Contact';
+import Background from './background/Background';
 
 
 const Body = () => {
