@@ -3,7 +3,7 @@ import Welcome from './Welcome';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
-import Work from './Work';
+import Background from './Background';
 
 
 const Body = () => {
@@ -11,7 +11,7 @@ const Body = () => {
         <>
             <Welcome />
             <About />
-            <Work />
+            <Background />
             <Portfolio />
             <Contact />
         </>
