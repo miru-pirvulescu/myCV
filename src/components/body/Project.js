@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import {Card, Button, Badge, Modal} from 'react-bootstrap';
-import ProjectModal from './ProjectModal';
+import {Grid, Cell} from 'react-mdl';
+import { Player } from 'video-react';
 
-const Project = ({title, description, thumbnail, tags, details}) => {
+const Project = ({title, description, thumbnail, tags, details, demo}) => {
     const [show, setShow] = useState(false);
 
     const handleShow = () => setShow(true);
@@ -42,7 +43,24 @@ const Project = ({title, description, thumbnail, tags, details}) => {
                 <Modal.Header closeButton>
                 <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>{details}</Modal.Body>
+                <Modal.Body>
+                    <Grid>
+                        {demo != "" ?
+                            (<Cell col={6} phone={12}>
+                                <Player
+                                    playsInline
+                                    poster={thumbnail}
+                                    src={demo}
+                                    />
+                            </Cell> ) : <></>
+                        }
+                        <Cell col={!demo ? 12 : 6} phone={12}>
+                            {details}
+                        </Cell>
+                    </Grid>
+                    
+                
+                </Modal.Body>
                 <Modal.Footer>
                 <Button variant="primary" onClick={handleClose}>
                     Close

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Layout, Content} from 'react-mdl';
-import welcome from '../../assets/img/welcome.jpg';
+import welcome from '../../assets/img/Welcome/temp_welcome.jpg';
 
 const welcomeStyle={
     color:"black",
