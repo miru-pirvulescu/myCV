@@ -6,7 +6,7 @@ const welcomeStyle={
     color:"black",
     position: "absolute",
     bottom: "0px",
-    left: "20px"
+    left: "40px"
 };
 
 const Welcome = () => {
