@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Card, Button, Badge, Modal} from 'react-bootstrap';
 import {Grid, Cell} from 'react-mdl';
-import { Player } from 'video-react';
 
 const Project = ({title, description, thumbnail, tags, details, demo}) => {
     const [show, setShow] = useState(false);
@@ -47,11 +46,13 @@ const Project = ({title, description, thumbnail, tags, details, demo}) => {
                     <Grid>
                         {demo ?
                             <Cell col={6} phone={12}>
-                                <Player
-                                    playsInline
-                                    poster={thumbnail}
+                                <iframe
+                                    
                                     src={demo}
-                                    />
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                                    allowfullscreen>
+                                </iframe>
                             </Cell>
                             :
                             <></>

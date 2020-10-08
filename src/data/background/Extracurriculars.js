@@ -32,7 +32,7 @@ const extracurriculars = [
     name: "GROW Ambassador",
     organisation: "AIESEC",
     period: "2014-2016",
-    description: "One of the most remarkable projects that I have been involved with is the GROW project, which was managed by AIESEC Timisoara. This event was spread over 10 weeks in which foreign mentors would come to our city to teach us about personal growth and things that you cannot learn in schools, such as how to find your personal values and how to interpret certain types of behabiour. The organisation offered me the position of ambassador after a successful interview where I got to meet and network with the team."
+    description: "One of the most remarkable projects that I have been involved with is the GROW project, which was managed by AIESEC Timisoara. This event was spread over 10 weeks in which foreign mentors would come to our city to teach us about personal growth and things that you cannot learn in schools, such as how to find your personal values and how to interpret certain types of behaviour. The organisation offered me the position of ambassador after a successful interview where I got to meet and network with the team."
 }
 ]
 
